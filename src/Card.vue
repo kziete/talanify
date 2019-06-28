@@ -6,7 +6,6 @@
     </div>
     <slot>
       <div class="talana-card-empty-state">
-        <img src="./assets/monsters/julls.png" alt="Julls monstruo">
         <p>{{emptyState.text}}</p>
       </div>
     </slot>
@@ -35,12 +34,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/scss/variables';
 
   .talana-card {
-    background-color: $white;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
     overflow: hidden;
     margin: 0 0 16px 0;
 

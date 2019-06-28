@@ -1,21 +1,30 @@
 {
   "name": "@talanify/talanify",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Talanify Components",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bili --name index --plugin vue --vue.css false"
   },
   "files": [
-    "src"
+    "dist/*"
   ],
-  "peerDependencies":{
+  "dependencies": {
+    "vue-runtime-helpers": "1.0.1"
+  },
+  "peerDependencies": {
     "vue": "^2.6.10"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.talana.com:talana/talanify.git"
+    "url": "git@https://github.com/kziete/talanify.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^4.8.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
