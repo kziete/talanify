@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies":{
+    "vue": "^2.6.10"
+  },
   "repository": {
     "type": "git",
     "url": "git@gitlab.talana.com:talana/talanify.git"
